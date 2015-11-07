@@ -62,6 +62,10 @@ public class FieldErrorAssert {
     public int getErrorCount() {
         return errorCount;
     }
+    
+    public BindingResult getBindingResult() {
+        return this.result;
+    }
 
     public FieldErrorAssert execAssert() {
         FieldError error = result.getFieldError(fieldName);
